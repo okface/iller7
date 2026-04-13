@@ -3,7 +3,7 @@ import { computed, onMounted } from 'vue'
 import { useStorage } from '@vueuse/core'
 import { useProgressStore } from '@/stores/progress.js'
 import { useContentStore } from '@/stores/content.js'
-import { STORAGE_KEYS, ACHIEVEMENTS, SRS_BUCKETS } from '@/utils/constants.js'
+import { STORAGE_KEYS, ACHIEVEMENTS } from '@/utils/constants.js'
 import { getTopicDisplayName } from '@/utils/displayNames.js'
 import StreakCalendar from '@/components/stats/StreakCalendar.vue'
 import CategoryBreakdown from '@/components/stats/CategoryBreakdown.vue'
@@ -15,7 +15,21 @@ const darkMode = useStorage(STORAGE_KEYS.DARK_MODE, false)
 
 onMounted(() => content.loadContent())
 
-const total = computed(() => progress.totalStats)
+// Subject-filtered overview stats
+const subjectStats = computed(() => {
+  const subject = selectedSubject.value
+  if (!subject) return progress.totalStats
+  const qs = content.questionsForSubject(subject)
+  const qIds = new Set(qs.map(q => q.id))
+  let seen = 0, correct = 0, wrong = 0
+  for (const [id, p] of Object.entries(progress.progress)) {
+    if (!qIds.has(id)) continue
+    seen += p.totalSeen || 0
+    correct += p.totalCorrect || 0
+    wrong += p.totalWrong || 0
+  }
+  return { seen, correct, wrong, accuracy: seen > 0 ? correct / seen : 0 }
+})
 
 // Achievements
 const earned = computed(() => {
@@ -72,11 +86,11 @@ const categoryStats = computed(() => {
     <!-- Overview cards -->
     <div class="grid grid-cols-2 gap-3 mb-6">
       <div class="p-4 rounded-xl bg-white dark:bg-stone-800 border border-stone-200 dark:border-stone-700 text-center">
-        <div class="text-2xl font-bold">{{ total.seen }}</div>
+        <div class="text-2xl font-bold">{{ subjectStats.seen }}</div>
         <div class="text-xs text-stone-500">Totalt svar</div>
       </div>
       <div class="p-4 rounded-xl bg-white dark:bg-stone-800 border border-stone-200 dark:border-stone-700 text-center">
-        <div class="text-2xl font-bold">{{ Math.round(total.accuracy * 100) }}%</div>
+        <div class="text-2xl font-bold">{{ Math.round(subjectStats.accuracy * 100) }}%</div>
         <div class="text-xs text-stone-500">Träffsäkerhet</div>
       </div>
       <div class="p-4 rounded-xl bg-white dark:bg-stone-800 border border-stone-200 dark:border-stone-700 text-center">

@@ -1,1 +1,0 @@
-import{c as o,a as e,t as s,o as a}from"./index-XxZs3gDT.js";const n={class:"p-4"},c="Home",p={__name:"HomeView",setup(l){return(r,t)=>(a(),o("div",n,[e("h1",{class:"text-xl font-bold"},s(c)),t[0]||(t[0]=e("p",{class:"text-stone-500"},"Coming soon...",-1))]))}};export{p as default};

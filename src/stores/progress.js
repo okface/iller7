@@ -154,11 +154,11 @@ export const useProgressStore = defineStore('progress', () => {
   // --- Mastery ---
   function categoryMastery(questions) {
     if (questions.length === 0) return MASTERY_LEVELS[0]
-    const advanced = questions.filter(q => {
+    const seen = questions.filter(q => {
       const p = progress.value[q.id]
-      return p && p.bucket >= SRS_BUCKETS.REVIEWING
+      return p && p.totalSeen > 0
     }).length
-    const ratio = advanced / questions.length
+    const ratio = seen / questions.length
     return [...MASTERY_LEVELS].reverse().find(l => ratio >= l.min) || MASTERY_LEVELS[0]
   }
 
