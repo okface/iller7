@@ -1,0 +1,1 @@
+import{c as e,a as s,t as o,o as a}from"./index-DCzzWNsg.js";const n={class:"p-4"},c="Quiz",p={__name:"QuizView",setup(i){return(l,t)=>(a(),e("div",n,[s("h1",{class:"text-xl font-bold"},o(c)),t[0]||(t[0]=s("p",{class:"text-stone-500"},"Coming soon...",-1))]))}};export{p as default};

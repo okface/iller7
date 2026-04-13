@@ -1,0 +1,1 @@
+import{c as o,a as s,t as e,o as a}from"./index-DCzzWNsg.js";const n={class:"p-4"},r="Dashboard",p={__name:"DashboardView",setup(c){return(l,t)=>(a(),o("div",n,[s("h1",{class:"text-xl font-bold"},e(r)),t[0]||(t[0]=s("p",{class:"text-stone-500"},"Coming soon...",-1))]))}};export{p as default};

@@ -1,0 +1,1 @@
+import{c as e,a as s,t as o,o as a}from"./index-XxZs3gDT.js";const n={class:"p-4"},c="Exam",p={__name:"ExamView",setup(l){return(r,t)=>(a(),e("div",n,[s("h1",{class:"text-xl font-bold"},o(c)),t[0]||(t[0]=s("p",{class:"text-stone-500"},"Coming soon...",-1))]))}};export{p as default};

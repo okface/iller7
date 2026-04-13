@@ -1,0 +1,1 @@
+import{c as s,a as t,t as o,e as a}from"./index-p_J6LoTl.js";const n={class:"p-4"},c="Review",p={__name:"ReviewView",setup(i){return(l,e)=>(a(),s("div",n,[t("h1",{class:"text-xl font-bold"},o(c)),e[0]||(e[0]=t("p",{class:"text-stone-500"},"Coming soon...",-1))]))}};export{p as default};

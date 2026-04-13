@@ -1,0 +1,548 @@
+[
+  {
+    "name": "Varning för farlig kurva",
+    "category": "Varning",
+    "filename": "varning_for_farlig_kurva.svg",
+    "wiki_file": "Sweden_road_sign_A1-1.svg"
+  },
+  {
+    "name": "Varning för flera farliga kurvor",
+    "category": "Varning",
+    "filename": "varning_for_flera_farliga_kurvor.svg",
+    "wiki_file": "Sweden_road_sign_A2-1.svg"
+  },
+  {
+    "name": "Varning för nedförslutning",
+    "category": "Varning",
+    "filename": "varning_for_nedforslutning.svg",
+    "wiki_file": "Sweden_road_sign_A3.svg"
+  },
+  {
+    "name": "Varning för stigning",
+    "category": "Varning",
+    "filename": "varning_for_stigning.svg",
+    "wiki_file": "Sweden_road_sign_A4.svg"
+  },
+  {
+    "name": "Varning för avsmalnande väg",
+    "category": "Varning",
+    "filename": "varning_for_avsmalnande_vag.svg",
+    "wiki_file": "Sweden_road_sign_A5-1.svg"
+  },
+  {
+    "name": "Varning för bro",
+    "category": "Varning",
+    "filename": "varning_for_bro.svg",
+    "wiki_file": "Sweden_road_sign_A6.svg"
+  },
+  {
+    "name": "Varning för kaj",
+    "category": "Varning",
+    "filename": "varning_for_kaj.svg",
+    "wiki_file": "Sweden_road_sign_A7.svg"
+  },
+  {
+    "name": "Varning för ojämn väg",
+    "category": "Varning",
+    "filename": "varning_for_ojamn_vag.svg",
+    "wiki_file": "Sweden_road_sign_A8.svg"
+  },
+  {
+    "name": "Varning för farthinder",
+    "category": "Varning",
+    "filename": "varning_for_farthinder.svg",
+    "wiki_file": "Sweden_road_sign_A9-1.svg"
+  },
+  {
+    "name": "Varning för stenskott",
+    "category": "Varning",
+    "filename": "varning_for_stenskott.svg",
+    "wiki_file": "Sweden_road_sign_A11.svg"
+  },
+  {
+    "name": "Varning för stenras",
+    "category": "Varning",
+    "filename": "varning_for_stenras.svg",
+    "wiki_file": "Sweden_road_sign_A12-1.svg"
+  },
+  {
+    "name": "Varning för övergångsställe",
+    "category": "Varning",
+    "filename": "varning_for_overgangsstalle.svg",
+    "wiki_file": "Sweden_road_sign_A13.svg"
+  },
+  {
+    "name": "Varning för gående",
+    "category": "Varning",
+    "filename": "varning_for_gaende.svg",
+    "wiki_file": "Sweden_road_sign_A14.svg"
+  },
+  {
+    "name": "Varning för barn",
+    "category": "Varning",
+    "filename": "varning_for_barn.svg",
+    "wiki_file": "Sweden_road_sign_A15.svg"
+  },
+  {
+    "name": "Varning för cyklande och mopedförare",
+    "category": "Varning",
+    "filename": "varning_for_cyklande_och_mopedforare.svg",
+    "wiki_file": "Sweden_road_sign_A16.svg"
+  },
+  {
+    "name": "Varning för skidåkare",
+    "category": "Varning",
+    "filename": "varning_for_skidakare.svg",
+    "wiki_file": "Sweden_road_sign_A17.svg"
+  },
+  {
+    "name": "Varning för ridande",
+    "category": "Varning",
+    "filename": "varning_for_ridande.svg",
+    "wiki_file": "Sweden_road_sign_A18.svg"
+  },
+  {
+    "name": "Varning för älg",
+    "category": "Varning",
+    "filename": "varning_for_alg.svg",
+    "wiki_file": "Sweden_road_sign_A19-1.svg"
+  },
+  {
+    "name": "Varning för hjortdjur",
+    "category": "Varning",
+    "filename": "varning_for_hjortdjur.svg",
+    "wiki_file": "Sweden_road_sign_A19-2.svg"
+  },
+  {
+    "name": "Varning för nötkreatur",
+    "category": "Varning",
+    "filename": "varning_for_notkreatur.svg",
+    "wiki_file": "Sweden_road_sign_A19-3.svg"
+  },
+  {
+    "name": "Varning för häst",
+    "category": "Varning",
+    "filename": "varning_for_hast.svg",
+    "wiki_file": "Sweden_road_sign_A19-4.svg"
+  },
+  {
+    "name": "Varning för ren",
+    "category": "Varning",
+    "filename": "varning_for_ren.svg",
+    "wiki_file": "Sweden_road_sign_A19-5.svg"
+  },
+  {
+    "name": "Varning för får",
+    "category": "Varning",
+    "filename": "varning_for_far.svg",
+    "wiki_file": "Sweden_road_sign_A19-6.svg"
+  },
+  {
+    "name": "Varning för vildsvin",
+    "category": "Varning",
+    "filename": "varning_for_vildsvin.svg",
+    "wiki_file": "Sweden_road_sign_A19-7.svg"
+  },
+  {
+    "name": "Varning för vägarbete",
+    "category": "Varning",
+    "filename": "varning_for_vagarbete.svg",
+    "wiki_file": "Sweden_road_sign_A20.svg"
+  },
+  {
+    "name": "Varning för flerfärgssignal",
+    "category": "Varning",
+    "filename": "varning_for_flerfargssignal.svg",
+    "wiki_file": "Sweden_road_sign_A22.svg"
+  },
+  {
+    "name": "Varning för lågt flygande flygplan",
+    "category": "Varning",
+    "filename": "varning_for_lagt_flygande_flygplan.svg",
+    "wiki_file": "Sweden_road_sign_A23-1.svg"
+  },
+  {
+    "name": "Varning för sidvind",
+    "category": "Varning",
+    "filename": "varning_for_sidvind.svg",
+    "wiki_file": "Sweden_road_sign_A24-1.svg"
+  },
+  {
+    "name": "Varning för mötande trafik",
+    "category": "Varning",
+    "filename": "varning_for_motande_trafik.svg",
+    "wiki_file": "Sweden_road_sign_A25.svg"
+  },
+  {
+    "name": "Varning för tunnel",
+    "category": "Varning",
+    "filename": "varning_for_tunnel.svg",
+    "wiki_file": "Sweden_road_sign_A26.svg"
+  },
+  {
+    "name": "Varning för svag vägkant",
+    "category": "Varning",
+    "filename": "varning_for_svag_vagkant.svg",
+    "wiki_file": "Sweden_road_sign_A27.svg"
+  },
+  {
+    "name": "Varning för vägkorsning",
+    "category": "Varning",
+    "filename": "varning_for_vagkorsning.svg",
+    "wiki_file": "Sweden_road_sign_A28.svg"
+  },
+  {
+    "name": "Varning för cirkulationsplats",
+    "category": "Varning",
+    "filename": "varning_for_cirkulationsplats.svg",
+    "wiki_file": "Sweden_road_sign_A30.svg"
+  },
+  {
+    "name": "Varning för långsamtgående fordon",
+    "category": "Varning",
+    "filename": "varning_for_langsamtgaende_fordon.svg",
+    "wiki_file": "Sweden_road_sign_A31.svg"
+  },
+  {
+    "name": "Varning för kö",
+    "category": "Varning",
+    "filename": "varning_for_ko.svg",
+    "wiki_file": "Sweden_road_sign_A34.svg"
+  },
+  {
+    "name": "Varning för järnvägskorsning med bommar",
+    "category": "Varning",
+    "filename": "varning_for_jarnvagskorsning_med_bommar.svg",
+    "wiki_file": "Sweden_road_sign_A35.svg"
+  },
+  {
+    "name": "Varning för järnvägskorsning utan bommar",
+    "category": "Varning",
+    "filename": "varning_for_jarnvagskorsning_utan_bommar.svg",
+    "wiki_file": "Sweden_road_sign_A36.svg"
+  },
+  {
+    "name": "Väjningsplikt",
+    "category": "Väjningsplikt",
+    "filename": "vajningsplikt.svg",
+    "wiki_file": "Sweden_road_sign_B1.svg"
+  },
+  {
+    "name": "Stopplikt",
+    "category": "Väjningsplikt",
+    "filename": "vagmarke_stopplikt.svg",
+    "wiki_file": "Sweden_road_sign_B2.svg"
+  },
+  {
+    "name": "Övergångsställe",
+    "category": "Väjningsplikt",
+    "filename": "vagmarke_overgangsstalle.svg",
+    "wiki_file": "Sweden_road_sign_B3-1.svg"
+  },
+  {
+    "name": "Huvudled",
+    "category": "Väjningsplikt",
+    "filename": "vagmarke_huvudled.svg",
+    "wiki_file": "Sweden_road_sign_B4.svg"
+  },
+  {
+    "name": "Huvudled upphör",
+    "category": "Väjningsplikt",
+    "filename": "vagmarke_huvudled_upphor.svg",
+    "wiki_file": "Sweden_road_sign_B5.svg"
+  },
+  {
+    "name": "Väjningsplikt mot mötande trafik",
+    "category": "Väjningsplikt",
+    "filename": "vajningsplikt_mot_motande_trafik.svg",
+    "wiki_file": "Sweden_road_sign_B6.svg"
+  },
+  {
+    "name": "Mötande trafik har väjningsplikt",
+    "category": "Väjningsplikt",
+    "filename": "vagmarke_motande_trafik_har_vajningsplikt.svg",
+    "wiki_file": "Sweden_road_sign_B7.svg"
+  },
+  {
+    "name": "Cykelöverfart",
+    "category": "Väjningsplikt",
+    "filename": "vagmarke_cykeloverfart.svg",
+    "wiki_file": "Sweden_road_sign_B8.svg"
+  },
+  {
+    "name": "Förbud mot infart med fordon",
+    "category": "Förbud",
+    "filename": "forbud_mot_infart_med_fordon.svg",
+    "wiki_file": "Sweden_road_sign_C1.svg"
+  },
+  {
+    "name": "Förbud mot trafik med fordon",
+    "category": "Förbud",
+    "filename": "forbud_mot_trafik_med_fordon.svg",
+    "wiki_file": "Sweden_road_sign_C2.svg"
+  },
+  {
+    "name": "Förbud mot trafik med motorcykel",
+    "category": "Förbud",
+    "filename": "forbud_mot_trafik_med_motorcykel.svg",
+    "wiki_file": "Sweden_road_sign_C5.svg"
+  },
+  {
+    "name": "Förbud mot trafik med tung lastbil",
+    "category": "Förbud",
+    "filename": "forbud_mot_trafik_med_tung_lastbil.svg",
+    "wiki_file": "Sweden_road_sign_C7.svg"
+  },
+  {
+    "name": "Förbud mot omkörning",
+    "category": "Förbud",
+    "filename": "forbud_mot_omkorning.svg",
+    "wiki_file": "Sweden_road_sign_C27.svg"
+  },
+  {
+    "name": "Förbud mot omkörning med tung lastbil",
+    "category": "Förbud",
+    "filename": "forbud_mot_omkorning_med_tung_lastbil.svg",
+    "wiki_file": "Sweden_road_sign_C29.svg"
+  },
+  {
+    "name": "Hastighetsbegränsning 30",
+    "category": "Förbud",
+    "filename": "vagmarke_hastighetsbegransning_30.svg",
+    "wiki_file": "Sweden_road_sign_C31-30.svg"
+  },
+  {
+    "name": "Hastighetsbegränsning 40",
+    "category": "Förbud",
+    "filename": "vagmarke_hastighetsbegransning_40.svg",
+    "wiki_file": "Sweden_road_sign_C31-40.svg"
+  },
+  {
+    "name": "Hastighetsbegränsning 50",
+    "category": "Förbud",
+    "filename": "vagmarke_hastighetsbegransning_50.svg",
+    "wiki_file": "Sweden_road_sign_C31-50.svg"
+  },
+  {
+    "name": "Hastighetsbegränsning 60",
+    "category": "Förbud",
+    "filename": "vagmarke_hastighetsbegransning_60.svg",
+    "wiki_file": "Sweden_road_sign_C31-60.svg"
+  },
+  {
+    "name": "Hastighetsbegränsning 70",
+    "category": "Förbud",
+    "filename": "vagmarke_hastighetsbegransning_70.svg",
+    "wiki_file": "Sweden_road_sign_C31-70.svg"
+  },
+  {
+    "name": "Hastighetsbegränsning 80",
+    "category": "Förbud",
+    "filename": "vagmarke_hastighetsbegransning_80.svg",
+    "wiki_file": "Sweden_road_sign_C31-80.svg"
+  },
+  {
+    "name": "Hastighetsbegränsning 90",
+    "category": "Förbud",
+    "filename": "vagmarke_hastighetsbegransning_90.svg",
+    "wiki_file": "Sweden_road_sign_C31-90.svg"
+  },
+  {
+    "name": "Hastighetsbegränsning 100",
+    "category": "Förbud",
+    "filename": "vagmarke_hastighetsbegransning_100.svg",
+    "wiki_file": "Sweden_road_sign_C31-100.svg"
+  },
+  {
+    "name": "Hastighetsbegränsning 110",
+    "category": "Förbud",
+    "filename": "vagmarke_hastighetsbegransning_110.svg",
+    "wiki_file": "Sweden_road_sign_C31-110.svg"
+  },
+  {
+    "name": "Hastighetsbegränsning 120",
+    "category": "Förbud",
+    "filename": "vagmarke_hastighetsbegransning_120.svg",
+    "wiki_file": "Sweden_road_sign_C31-120.svg"
+  },
+  {
+    "name": "Förbud mot att parkera",
+    "category": "Förbud",
+    "filename": "forbud_mot_att_parkera.svg",
+    "wiki_file": "Sweden_road_sign_C35.svg"
+  },
+  {
+    "name": "Datumparkering",
+    "category": "Förbud",
+    "filename": "vagmarke_datumparkering.svg",
+    "wiki_file": "Sweden_road_sign_C38.svg"
+  },
+  {
+    "name": "Förbud mot att stanna och parkera",
+    "category": "Förbud",
+    "filename": "forbud_mot_att_stanna_och_parkera.svg",
+    "wiki_file": "Sweden_road_sign_C39.svg"
+  },
+  {
+    "name": "Vändplats",
+    "category": "Förbud",
+    "filename": "vagmarke_vandplats.svg",
+    "wiki_file": "Sweden_road_sign_C42-1.svg"
+  },
+  {
+    "name": "Påbjuden körriktning höger",
+    "category": "Påbud",
+    "filename": "vagmarke_pabjuden_korriktning_hoger.svg",
+    "wiki_file": "Sweden_road_sign_D1-2.svg"
+  },
+  {
+    "name": "Påbjuden körbana",
+    "category": "Påbud",
+    "filename": "vagmarke_pabjuden_korbana.svg",
+    "wiki_file": "Sweden_road_sign_D2-1.svg"
+  },
+  {
+    "name": "Cirkulationsplats",
+    "category": "Påbud",
+    "filename": "vagmarke_cirkulationsplats.svg",
+    "wiki_file": "Sweden_road_sign_D3.svg"
+  },
+  {
+    "name": "Påbjuden gångbana",
+    "category": "Påbud",
+    "filename": "vagmarke_pabjuden_gangbana.svg",
+    "wiki_file": "Sweden_road_sign_D4.svg"
+  },
+  {
+    "name": "Påbjuden cykelbana",
+    "category": "Påbud",
+    "filename": "vagmarke_pabjuden_cykelbana.svg",
+    "wiki_file": "Sweden_road_sign_D5.svg"
+  },
+  {
+    "name": "Påbjuden gång- och cykelbana",
+    "category": "Påbud",
+    "filename": "vagmarke_pabjuden_gang_och_cykelbana.svg",
+    "wiki_file": "Sweden_road_sign_D6.svg"
+  },
+  {
+    "name": "Motorväg",
+    "category": "Anvisning",
+    "filename": "vagmarke_anvisning_motorvag.svg",
+    "wiki_file": "Sweden_road_sign_E1.svg"
+  },
+  {
+    "name": "Motorväg upphör",
+    "category": "Anvisning",
+    "filename": "vagmarke_anvisning_motorvag_upphor.svg",
+    "wiki_file": "Sweden_road_sign_E2.svg"
+  },
+  {
+    "name": "Motortrafikled",
+    "category": "Anvisning",
+    "filename": "vagmarke_anvisning_motortrafikled.svg",
+    "wiki_file": "Sweden_road_sign_E3.svg"
+  },
+  {
+    "name": "Motortrafikled upphör",
+    "category": "Anvisning",
+    "filename": "vagmarke_anvisning_motortrafikled_upphor.svg",
+    "wiki_file": "Sweden_road_sign_E4.svg"
+  },
+  {
+    "name": "Tätort",
+    "category": "Anvisning",
+    "filename": "vagmarke_anvisning_tatort.svg",
+    "wiki_file": "Sweden_road_sign_E5.svg"
+  },
+  {
+    "name": "Tätort upphör",
+    "category": "Anvisning",
+    "filename": "vagmarke_anvisning_tatort_upphor.svg",
+    "wiki_file": "Sweden_road_sign_E6.svg"
+  },
+  {
+    "name": "Gågata",
+    "category": "Anvisning",
+    "filename": "vagmarke_anvisning_gagata.svg",
+    "wiki_file": "Sweden_road_sign_E7.svg"
+  },
+  {
+    "name": "Gågata upphör",
+    "category": "Anvisning",
+    "filename": "vagmarke_anvisning_gagata_upphor.svg",
+    "wiki_file": "Sweden_road_sign_E8.svg"
+  },
+  {
+    "name": "Gångfartsområde",
+    "category": "Anvisning",
+    "filename": "vagmarke_anvisning_gangfartsomrade.svg",
+    "wiki_file": "Sweden_road_sign_E9.svg"
+  },
+  {
+    "name": "Gångfartsområde upphör",
+    "category": "Anvisning",
+    "filename": "vagmarke_anvisning_gangfartsomrade_upphor.svg",
+    "wiki_file": "Sweden_road_sign_E10.svg"
+  },
+  {
+    "name": "Rekommenderad lägre hastighet",
+    "category": "Anvisning",
+    "filename": "vagmarke_anvisning_rekommenderad_lagre_hastighet.svg",
+    "wiki_file": "Sweden_road_sign_E11-3.svg"
+  },
+  {
+    "name": "Sammanvävning",
+    "category": "Anvisning",
+    "filename": "vagmarke_anvisning_sammanvavning.svg",
+    "wiki_file": "Sweden_road_sign_E15.svg"
+  },
+  {
+    "name": "Enkelriktad trafik",
+    "category": "Anvisning",
+    "filename": "vagmarke_anvisning_enkelriktad_trafik.svg",
+    "wiki_file": "Sweden_road_sign_E16-1.svg"
+  },
+  {
+    "name": "Återvändsgata",
+    "category": "Anvisning",
+    "filename": "vagmarke_anvisning_atervandsgata.svg",
+    "wiki_file": "Sweden_road_sign_E17-1.svg"
+  },
+  {
+    "name": "Mötesplats",
+    "category": "Anvisning",
+    "filename": "vagmarke_anvisning_motesplats.svg",
+    "wiki_file": "Sweden_road_sign_E18.svg"
+  },
+  {
+    "name": "Parkering",
+    "category": "Anvisning",
+    "filename": "vagmarke_anvisning_parkering.svg",
+    "wiki_file": "Sweden_road_sign_E19.svg"
+  },
+  {
+    "name": "Busshållplats",
+    "category": "Anvisning",
+    "filename": "vagmarke_anvisning_busshallplats.svg",
+    "wiki_file": "Sweden_road_sign_E22.svg"
+  },
+  {
+    "name": "Kameraövervakning",
+    "category": "Anvisning",
+    "filename": "vagmarke_anvisning_kameraovervakning.svg",
+    "wiki_file": "Sweden_road_sign_E24.svg"
+  },
+  {
+    "name": "Tunnel",
+    "category": "Anvisning",
+    "filename": "vagmarke_anvisning_tunnel.svg",
+    "wiki_file": "Sweden_road_sign_E26.svg"
+  },
+  {
+    "name": "Nödutgång",
+    "category": "Anvisning",
+    "filename": "vagmarke_anvisning_nodutgang.svg",
+    "wiki_file": "Sweden_road_sign_E28-1.svg"
+  }
+]
