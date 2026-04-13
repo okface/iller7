@@ -1,1 +1,0 @@
-import{c as s,a as e,t as o,e as a}from"./index-p_J6LoTl.js";const n={class:"p-4"},c="Search",p={__name:"SearchView",setup(r){return(l,t)=>(a(),s("div",n,[e("h1",{class:"text-xl font-bold"},o(c)),t[0]||(t[0]=e("p",{class:"text-stone-500"},"Coming soon...",-1))]))}};export{p as default};
