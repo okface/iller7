@@ -1,5 +1,6 @@
 <script setup>
 import { ref, computed, onMounted } from 'vue'
+import { useRoute } from 'vue-router'
 import { useContentStore } from '@/stores/content.js'
 import { useProgressStore } from '@/stores/progress.js'
 import { useStorage } from '@vueuse/core'
@@ -8,12 +9,13 @@ import TagBadge from '@/components/shared/TagBadge.vue'
 import { BookmarkIcon as BookmarkOutline } from '@heroicons/vue/24/outline'
 import { BookmarkIcon as BookmarkSolid } from '@heroicons/vue/24/solid'
 
+const route = useRoute()
 const content = useContentStore()
 const progress = useProgressStore()
 const selectedSubject = useStorage(STORAGE_KEYS.SUBJECT, null)
 
 const search = ref('')
-const filter = ref('all') // all, unseen, wrong, mastered, bookmarked
+const filter = ref(route.query.filter || 'all')
 const expandedId = ref(null)
 
 onMounted(() => content.loadContent())

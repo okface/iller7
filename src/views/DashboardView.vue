@@ -71,7 +71,12 @@ function startExam() {
 }
 
 function switchSubject() {
+  selectedSubject.value = null
   router.push({ name: 'home' })
+}
+
+function goToSaved() {
+  router.push({ name: 'search', query: { filter: 'bookmarked' } })
 }
 </script>
 
@@ -100,13 +105,22 @@ function switchSubject() {
       class="mb-5"
     />
 
-    <!-- Exam button -->
-    <button
-      @click="startExam"
-      class="w-full py-3 rounded-xl font-semibold border-2 border-indigo-200 dark:border-indigo-800 text-indigo-700 dark:text-indigo-300 hover:bg-indigo-50 dark:hover:bg-indigo-950 transition-colors mb-6 active:scale-[0.98]"
-    >
-      Provläge
-    </button>
+    <!-- Exam + Saved row -->
+    <div class="flex gap-3 mb-6">
+      <button
+        @click="startExam"
+        class="flex-1 py-3 rounded-xl font-semibold border-2 border-indigo-200 dark:border-indigo-800 text-indigo-700 dark:text-indigo-300 hover:bg-indigo-50 dark:hover:bg-indigo-950 transition-colors active:scale-[0.98]"
+      >
+        Provläge
+      </button>
+      <button
+        @click="goToSaved"
+        class="flex-1 py-3 rounded-xl font-semibold border-2 border-amber-200 dark:border-amber-800 text-amber-700 dark:text-amber-300 hover:bg-amber-50 dark:hover:bg-amber-950 transition-colors active:scale-[0.98] flex items-center justify-center gap-2"
+      >
+        <span>Sparade</span>
+        <span v-if="progress.bookmarks.length" class="text-xs bg-amber-100 dark:bg-amber-900 px-1.5 py-0.5 rounded-full">{{ progress.bookmarks.length }}</span>
+      </button>
+    </div>
 
     <!-- Category mastery -->
     <div class="flex items-center justify-between mb-3">

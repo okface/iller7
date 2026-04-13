@@ -1,5 +1,5 @@
 <script setup>
-import { ref } from 'vue'
+import { ref, nextTick } from 'vue'
 
 const props = defineProps({
   question: Object,
@@ -7,14 +7,23 @@ const props = defineProps({
 })
 
 const revealedOptions = ref(new Set())
+const revealedRefs = ref({})
+
+function setRevealedRef(i, el) {
+  if (el) revealedRefs.value[i] = el
+}
 
 function toggleOption(i) {
-  if (i === props.selectedIndex) return // already shown
-  if (props.question.options[i]?.correct) return // already shown
+  if (i === props.selectedIndex) return
+  if (props.question.options[i]?.correct) return
   if (revealedOptions.value.has(i)) {
     revealedOptions.value.delete(i)
   } else {
     revealedOptions.value.add(i)
+    nextTick(() => {
+      const el = revealedRefs.value[i]
+      if (el) el.scrollIntoView({ behavior: 'smooth', block: 'nearest' })
+    })
   }
 }
 </script>
@@ -45,7 +54,7 @@ function toggleOption(i) {
         {{ ['A','B','C','D','E','F'][i] }}
       </button>
     </div>
-    <div v-for="i in revealedOptions" :key="i" class="mt-2 p-3 rounded-lg bg-stone-50 dark:bg-stone-800 text-sm animate-fadeIn">
+    <div v-for="i in revealedOptions" :key="i" :ref="(el) => setRevealedRef(i, el)" class="mt-2 p-3 rounded-lg bg-stone-50 dark:bg-stone-800 text-sm animate-fadeIn">
       <span class="font-medium">{{ ['A','B','C','D','E','F'][i] }}:</span> {{ question.options[i]?.feedback }}
     </div>
   </div>

@@ -3,6 +3,7 @@ import { ref, computed, watch, onMounted, nextTick } from 'vue'
 import { useRouter } from 'vue-router'
 import { useQuizStore } from '@/stores/quiz.js'
 import { useContentStore } from '@/stores/content.js'
+import { useProgressStore } from '@/stores/progress.js'
 import { useKeyboard } from '@/composables/useKeyboard.js'
 import { useSwipe } from '@/composables/useSwipe.js'
 import TopBar from '@/components/layout/TopBar.vue'
@@ -10,10 +11,13 @@ import ConfirmModal from '@/components/shared/ConfirmModal.vue'
 import QuestionCard from '@/components/quiz/QuestionCard.vue'
 import OptionButton from '@/components/quiz/OptionButton.vue'
 import ExplanationPanel from '@/components/quiz/ExplanationPanel.vue'
+import { BookmarkIcon as BookmarkOutline } from '@heroicons/vue/24/outline'
+import { BookmarkIcon as BookmarkSolid } from '@heroicons/vue/24/solid'
 
 const router = useRouter()
 const quiz = useQuizStore()
 const content = useContentStore()
+const progressStore = useProgressStore()
 const showQuitModal = ref(false)
 const quizContainer = ref(null)
 const selectedIdx = ref(null)
@@ -91,7 +95,19 @@ watch(() => quiz.currentIndex, () => {
     />
 
     <div v-if="q" class="max-w-2xl mx-auto px-4 pt-4">
-      <QuestionCard :question="q" />
+      <div class="flex items-start gap-2">
+        <div class="flex-1">
+          <QuestionCard :question="q" />
+        </div>
+        <button
+          @click="progressStore.toggleBookmark(q.id)"
+          class="flex-shrink-0 p-2 rounded-lg hover:bg-stone-100 dark:hover:bg-stone-800 transition-colors mt-1"
+          :aria-label="progressStore.isBookmarked(q.id) ? 'Ta bort bokmärke' : 'Spara fråga'"
+        >
+          <BookmarkSolid v-if="progressStore.isBookmarked(q.id)" class="w-5 h-5 text-amber-500" />
+          <BookmarkOutline v-else class="w-5 h-5 text-stone-400" />
+        </button>
+      </div>
 
       <div class="mt-4 space-y-3">
         <OptionButton
