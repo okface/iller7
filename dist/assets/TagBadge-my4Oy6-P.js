@@ -1,0 +1,1 @@
+import{e as t,c as n,t as i}from"./index-Z_y_zUAd.js";const a={class:"inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-indigo-50 dark:bg-indigo-950 text-indigo-700 dark:text-indigo-300"},l={__name:"TagBadge",props:{label:String},setup(e){return(o,s)=>(t(),n("span",a,i(e.label),1))}};export{l as _};

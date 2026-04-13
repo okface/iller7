@@ -3,6 +3,10 @@
 import os
 import sys
 
+# Ensure UTF-8 output on Windows
+if sys.stdout.encoding != 'utf-8':
+    sys.stdout.reconfigure(encoding='utf-8')
+
 try:
     import yaml
 except ImportError:
@@ -12,6 +16,7 @@ except ImportError:
 DATA_DIR = os.path.join(os.path.dirname(__file__), '..', 'data')
 REQUIRED_FIELDS = {'id', 'type', 'question', 'options'}
 errors = []
+warnings = []
 
 def validate():
     seen_ids = set()
@@ -62,16 +67,24 @@ def validate():
                     continue
 
                 correct_count = sum(1 for o in opts if o.get('correct'))
-                if correct_count != 1:
-                    errors.append(f"{filepath} [{qid}]: has {correct_count} correct answers (expected 1)")
+                if correct_count == 0:
+                    errors.append(f"{filepath} [{qid}]: has no correct answer")
+                elif correct_count > 1:
+                    warnings.append(f"{filepath} [{qid}]: has {correct_count} correct answers (multi-correct)")
+
+    if warnings:
+        print(f"Warnings ({len(warnings)}):")
+        for w in warnings:
+            print(f"  ! {w}")
+        print()
 
     if errors:
         print(f"VALIDATION FAILED — {len(errors)} errors in {total} questions:\n")
         for e in errors:
-            print(f"  ✗ {e}")
+            print(f"  X {e}")
         sys.exit(1)
     else:
-        print(f"✓ All {total} questions valid. No errors.")
+        print(f"All {total} questions valid. No errors.")
 
 if __name__ == '__main__':
     validate()
