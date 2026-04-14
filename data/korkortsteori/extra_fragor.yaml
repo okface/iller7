@@ -1,0 +1,742 @@
+- id: kor-extra-001
+  type: multiple_choice
+  tags:
+  - Vägmärken
+  - Varning
+  - Vilt
+  question: Vad betyder detta vägmärke?
+  image: varning_for_alg.svg
+  options:
+  - text: Varning för älg — älgar kan plötsligt korsa vägen, särskilt i skymning och gryning.
+    correct: true
+    feedback: Skylten A19-1 varnar för älg, en av de farligaste viltolyckorna i Sverige.
+  - text: Varning för hjortdjur som rådjur och kronhjort.
+    correct: false
+    feedback: Hjortdjur har ett eget märke (A19-2) med annan siluett; älgmärket visar specifikt en älg.
+  - text: Det är förbjudet att jaga i området.
+    correct: false
+    feedback: Vägmärken reglerar trafik, inte jakt. Detta är ett varningsmärke.
+  - text: Djurreservat — stanna inte med fordon.
+    correct: false
+    feedback: Det finns inget sådant vägmärke; detta varnar föraren för älg på eller nära vägen.
+  explanation: Varningsmärket A19-1 "Varning för älg" används där det finns förhöjd risk för
+    älgolyckor. Sänk hastigheten, håll uppsikt mot vägkanterna och var extra uppmärksam i
+    gryning och skymning då älgar är som mest aktiva. Om en älg syns ska du sänka hastigheten
+    betydligt och vara beredd på att fler djur kan följa efter.
+- id: kor-extra-002
+  type: multiple_choice
+  tags:
+  - Vägmärken
+  - Varning
+  - Cirkulationsplats
+  question: Vad innebär denna varningsskylt?
+  image: varning_for_cirkulationsplats.svg
+  options:
+  - text: Varning för cirkulationsplats — förbered dig på att lämna företräde åt fordon i rondellen.
+    correct: true
+    feedback: Märket A30 varnar för att en cirkulationsplats kommer och att fordon i rondellen har företräde.
+  - text: Påbjuden cirkulationsplats — du måste köra runt i rondellen.
+    correct: false
+    feedback: Detta är ett varningsmärke (gul triangel), inte ett påbudsmärke (blå rund).
+  - text: Rondellen är avstängd — välj annan väg.
+    correct: false
+    feedback: En avstängningsskylt skulle ha rött kryss eller orange färg; detta är en varning.
+  - text: Upplysning om motorvägsavfart.
+    correct: false
+    feedback: Motorvägsavfart markeras med blå anvisningsmärken, inte med varningstriangel.
+  explanation: Varningsmärket A30 "Varning för cirkulationsplats" sätts upp före cirkulationsplatser
+    där föraren behöver förbereda sig. Kom ihåg att du har väjningsplikt mot fordon som redan
+    befinner sig i rondellen och att du ska blinka höger när du lämnar den.
+- id: kor-extra-003
+  type: multiple_choice
+  tags:
+  - Vägmärken
+  - Anvisning
+  - Enkelriktat
+  question: Vad betyder denna skylt?
+  image: vagmarke_anvisning_enkelriktad_trafik.svg
+  options:
+  - text: Enkelriktad trafik — fordon får endast köra i pilens riktning.
+    correct: true
+    feedback: Skylten E16 anger att vägen är enkelriktad och trafik går endast i den anvisade riktningen.
+  - text: Påbjuden körriktning — alla fordon måste svänga åt det hållet.
+    correct: false
+    feedback: Påbudspilar är runda blå skyltar; denna rektangulära skylt upplyser om enkelriktning.
+  - text: Förbud att köra åt andra hållet — men endast för motorfordon.
+    correct: false
+    feedback: Enkelriktning gäller all fordonstrafik i motsatt riktning, inte bara motorfordon.
+  - text: Rekommenderad körriktning i en tvåvägsgata.
+    correct: false
+    feedback: Skylten anger en absolut regel, inte en rekommendation, och gatan är inte tvåvägs.
+  explanation: Anvisningsmärket E16 "Enkelriktad trafik" visar att vägen är enkelriktad i pilens
+    riktning. Att köra mot trafikens riktning på en enkelriktad gata är en allvarlig överträdelse.
+    Observera att cykel ibland får färdas i båda riktningar om en tilläggstavla anger det.
+- id: kor-extra-004
+  type: multiple_choice
+  tags:
+  - Vägmärken
+  - Anvisning
+  - Parkering
+  question: Vad anger denna skylt?
+  image: vagmarke_anvisning_parkering.svg
+  options:
+  - text: Parkering tillåten — närmare villkor anges av eventuella tilläggstavlor.
+    correct: true
+    feedback: Skylten E19 visar att parkering är tillåten på den plats där skylten är uppsatt.
+  - text: Förbud mot parkering i området.
+    correct: false
+    feedback: Förbud mot parkering har röd cirkel med blå botten och rött kryss/snedstreck.
+  - text: Endast boende får parkera här.
+    correct: false
+    feedback: Boendeparkering kräver en tilläggstavla; grundskylten betyder bara "Parkering".
+  - text: Infartsparkering för pendlare med tåg.
+    correct: false
+    feedback: Infartsparkering markeras normalt med tilläggstavla; grundskylten betyder bara parkering.
+  explanation: Anvisningsmärket E19 "Parkering" upplyser om var parkering är tillåten. Villkor
+    som tidsbegränsning, avgift eller vilka fordon som får parkera anges på tilläggstavlor
+    under skylten. Om ingen tilläggstavla finns gäller allmänna parkeringsregler.
+- id: kor-extra-005
+  type: multiple_choice
+  tags:
+  - Vägmärken
+  - Förbud
+  - Hastighet
+  question: Vad betyder denna skylt?
+  image: vagmarke_hastighetsbegransning_70.svg
+  options:
+  - text: Högsta tillåtna hastighet är 70 km/h från skylten tills annan hastighetsskylt visas.
+    correct: true
+    feedback: Skylten C31 anger högsta tillåtna hastighet på 70 km/h.
+  - text: Rekommenderad hastighet 70 km/h — men det är tillåtet att köra fortare vid behov.
+    correct: false
+    feedback: Röd cirkel innebär absolut förbud att överskrida hastigheten, inte en rekommendation.
+  - text: Minsta tillåtna hastighet är 70 km/h.
+    correct: false
+    feedback: Skylt för lägsta hastighet är blå med vit siffra, inte vit med röd ring.
+  - text: Gäller endast på motorväg.
+    correct: false
+    feedback: Hastighetsgränsen gäller den väg där skylten är uppsatt, oavsett vägtyp.
+  explanation: Förbudsmärket C31 "Hastighetsbegränsning" anger maximal tillåten hastighet på
+    vägsträckan efter skylten. Gränsen gäller tills en ny hastighetsskylt, tättbebyggtsskylt
+    eller vägtyp ändrar den. Det är ditt ansvar att alltid anpassa hastigheten även lägre om
+    väglag, sikt eller trafik kräver det.
+- id: kor-extra-006
+  type: multiple_choice
+  tags:
+  - Alkohol
+  - Trafikregler
+  question: Vilken är den lägsta alkoholhalten i blodet som räknas som rattfylleri i Sverige?
+  image: null
+  options:
+  - text: 0,2 promille
+    correct: true
+    feedback: Rattfylleri börjar vid 0,2 promille i blodet, en av de strängaste gränserna i EU.
+  - text: 0,5 promille
+    correct: false
+    feedback: 0,5 promille är gränsen i vissa andra länder men i Sverige gäller 0,2 promille.
+  - text: 0,1 promille
+    correct: false
+    feedback: Gränsen är 0,2 promille, inte 0,1. Vid 0,1 räknas det inte som rattfylleri.
+  - text: 1,0 promille
+    correct: false
+    feedback: 1,0 promille är gränsen för grovt rattfylleri, inte för vanligt rattfylleri.
+  explanation: I Sverige är gränsen för rattfylleri 0,2 promille alkohol i blodet (0,10 mg/liter
+    i utandningsluft). Vid 1,0 promille eller mer räknas det som grovt rattfylleri med strängare
+    påföljd. Tänk på att även dagen efter kan alkohol finnas kvar i kroppen.
+- id: kor-extra-007
+  type: multiple_choice
+  tags:
+  - Stoppsträcka
+  - Hastighet
+  - Säkerhet
+  question: Vad består stoppsträckan av?
+  image: null
+  options:
+  - text: Reaktionssträcka plus bromssträcka.
+    correct: true
+    feedback: Stoppsträckan är summan av den sträcka bilen hinner köra under förarens reaktionstid
+      och själva bromssträckan.
+  - text: Enbart bromssträckan från det att bromsen trampas.
+    correct: false
+    feedback: Bromssträckan är bara en del av stoppsträckan; reaktionssträckan räknas också.
+  - text: Reaktionssträcka plus säkerhetsavstånd till framförvarande fordon.
+    correct: false
+    feedback: Säkerhetsavstånd är en separat rekommendation; stoppsträcka är reaktion plus bromsning.
+  - text: Bromssträcka plus tid att växla ned till neutralläge.
+    correct: false
+    feedback: Växling ingår inte i stoppsträckans definition.
+  explanation: Stoppsträckan är den totala sträcka fordonet rör sig från det att föraren
+    upptäcker faran till dess att fordonet står still. Den består av reaktionssträckan
+    (vanligtvis ca 1 sekund) och bromssträckan. Bromssträckan fyrdubblas vid dubbel hastighet,
+    vilket gör att höga hastigheter ökar stoppsträckan dramatiskt.
+- id: kor-extra-008
+  type: multiple_choice
+  tags:
+  - Däck
+  - Vinter
+  - Säkerhet
+  question: Vad är minsta tillåtna mönsterdjup på vinterdäck när vinterväglag råder?
+  image: null
+  options:
+  - text: 3,0 mm
+    correct: true
+    feedback: Vid vinterväglag måste vinterdäck ha minst 3,0 mm mönsterdjup.
+  - text: 1,6 mm
+    correct: false
+    feedback: 1,6 mm är minimikravet för sommardäck året runt, men vinterdäck kräver mer.
+  - text: 4,0 mm
+    correct: false
+    feedback: 4,0 mm är en rekommendation från däckbranschen men inte lagkravet (3,0 mm).
+  - text: 5,0 mm
+    correct: false
+    feedback: 5,0 mm är över lagkravet; lagen kräver minst 3,0 mm vid vinterväglag.
+  explanation: Enligt svensk lag ska vinterdäck ha minst 3,0 mm mönsterdjup när vinterväglag
+    råder. Sommardäck måste alltid ha minst 1,6 mm. Med mindre mönsterdjup försämras greppet
+    markant, särskilt i snö, slask och på is.
+- id: kor-extra-009
+  type: multiple_choice
+  tags:
+  - Vinterdäck
+  - Trafikregler
+  question: Under vilken period krävs vinterdäck i Sverige vid vinterväglag?
+  image: null
+  options:
+  - text: 1 december till 31 mars
+    correct: true
+    feedback: Vinterdäck är obligatoriskt mellan 1 december och 31 mars när det är vinterväglag.
+  - text: 1 november till 31 mars
+    correct: false
+    feedback: Kravet börjar 1 december, inte 1 november. Däremot är det tillåtet att använda
+      vinterdäck tidigare.
+  - text: 1 december till 15 april
+    correct: false
+    feedback: Perioden slutar 31 mars. Dubbdäck får dock användas fram till 15 april.
+  - text: Året runt
+    correct: false
+    feedback: Vinterdäck krävs endast vintertid vid vinterväglag; sommartid får man välja.
+  explanation: I Sverige ska bilar ha vinterdäck från 1 december till 31 mars när vinterväglag
+    råder. Dubbdäck är tillåtna 1 oktober till 15 april, men även utanför dessa datum om
+    vinterväglag råder. Friktionsdäck (odubbade vinterdäck) får användas året runt.
+- id: kor-extra-010
+  type: multiple_choice
+  tags:
+  - Barn
+  - Säkerhet
+  - Bilbälte
+  question: En 4-årig passagerare som är 105 cm lång ska i bilen skyddas av
+  image: null
+  options:
+  - text: En särskild bilbarnstol eller bälteskudde anpassad för barnets längd och vikt.
+    correct: true
+    feedback: Barn under 135 cm ska använda särskild skyddsanordning som passar barnets storlek.
+  - text: Endast vanligt bilbälte över axeln.
+    correct: false
+    feedback: Bilbältet sitter fel på korta barn utan kudde och kan orsaka skador.
+  - text: Inget skydd behövs i baksätet för barn över 3 år.
+    correct: false
+    feedback: Alla barn under 135 cm måste använda skyddsanordning, även i baksätet.
+  - text: Airbag räcker som skydd om barnet sitter fram.
+    correct: false
+    feedback: Airbag i framsätet är farlig för små barn och ska i vissa fall stängas av.
+  explanation: Barn under 135 cm längd måste använda en särskild skyddsanordning (bilbarnstol,
+    bältesstol eller bälteskudde) anpassad efter barnets vikt och längd. Barn under 3 år
+    får inte åka i fordon utan skyddsanordning. I framsätet får små barn sitta bakåtvänt
+    endast om krockkudden är avstängd.
+- id: kor-extra-011
+  type: multiple_choice
+  tags:
+  - Körning
+  - Scenario
+  - Landsväg
+  question: Du kör på en 90-väg och ser långt framför dig en traktor som kör ca 30 km/h. Vad
+    är lämpligast?
+  image: null
+  options:
+  - text: Sänk hastigheten i god tid, håll avstånd och kör om endast när sikten är fri och heldragen
+      linje inte hindrar.
+    correct: true
+    feedback: Anpassad hastighet och säker omkörning är grundprincipen vid möte med långsamma fordon.
+  - text: Behåll 90 km/h och kör om direkt innan du hinner ikapp.
+    correct: false
+    feedback: Att inte anpassa hastigheten i tid kan tvinga fram en riskabel omkörning.
+  - text: Tuta och blinka med helljuset tills traktorn flyttar sig åt sidan.
+    correct: false
+    feedback: Traktorföraren har rätt att använda vägen; aggressiv signalering är farligt och olagligt.
+  - text: Kör ikapp tätt bakom och vänta på att traktorn svänger av.
+    correct: false
+    feedback: Tätt avstånd ger ingen möjlighet att bromsa eller se förbi; farligt och olagligt.
+  explanation: Långsamtgående fordon som traktorer har rätt att använda allmän väg. Sänk
+    hastigheten i god tid, håll tillräckligt avstånd så du ser förbi fordonet, och kör
+    om endast när sikten är fri, när ingen heldragen mittlinje hindrar och när det går
+    att passera utan risk för möte.
+- id: kor-extra-012
+  type: multiple_choice
+  tags:
+  - Scenario
+  - Korsning
+  - Väjningsplikt
+  question: Du närmar dig en korsning utan skyltar på en liten väg. Från höger kommer en bil
+    i samma hastighet. Vad gäller?
+  image: null
+  options:
+  - text: Högerregeln — du har väjningsplikt mot bilen från höger.
+    correct: true
+    feedback: Vid korsning utan skyltar eller signaler gäller högerregeln.
+  - text: Den som kör på störst väg har företräde, oavsett riktning.
+    correct: false
+    feedback: Om inga skyltar anger huvudled eller väjningsplikt gäller alltid högerregeln.
+  - text: Den som kommer först till korsningen har företräde.
+    correct: false
+    feedback: "\"Först till kvarn\" är ingen trafikregel; högerregeln styr."
+  - text: Den som kör snabbast har företräde eftersom det är svårare att stanna.
+    correct: false
+    feedback: Hastighet ger aldrig företräde, utan kräver att man anpassar den.
+  explanation: När två fordon närmar sig en korsning där ingen är reglerad med skyltar,
+    signaler eller vägmarkeringar gäller högerregeln — du har väjningsplikt mot fordon
+    som kommer från höger. Sänk hastigheten i tid och var beredd att stanna.
+- id: kor-extra-013
+  type: multiple_choice
+  tags:
+  - Scenario
+  - Motorväg
+  - Körfält
+  question: Du kör på motorvägen i vänster körfält efter en omkörning. Vad bör du göra?
+  image: null
+  options:
+  - text: Återgå till höger körfält så snart det är möjligt och säkert.
+    correct: true
+    feedback: Vänster körfält är ett omkörningsfält, inte ett körfält att stanna i.
+  - text: Stanna kvar i vänster körfält för att undvika fler körfältsbyten.
+    correct: false
+    feedback: Man ska inte hindra snabbare trafik bakifrån; återgå till höger.
+  - text: Sakta ner till 90 km/h för att hålla säkerhetsavståndet.
+    correct: false
+    feedback: Att hålla avsevärt lägre hastighet i vänster fält är farligt och kan straffas.
+  - text: Blinka höger och stanna i vägrenen.
+    correct: false
+    feedback: Vägrenen används bara vid nödläge, inte för att återvända till höger fält.
+  explanation: På motorvägar och motortrafikleder är vänster körfält i första hand ett
+    omkörningsfält. Efter avslutad omkörning ska man återgå till höger körfält så snart
+    det kan ske utan risk, så att snabbare trafik bakifrån kan passera.
+- id: kor-extra-014
+  type: multiple_choice
+  tags:
+  - Belysning
+  - Bil
+  question: Vilket ljus ska du alltid ha tänt när du kör bil i Sverige?
+  image: null
+  options:
+  - text: Minst halvljus eller varselljus, dygnet runt.
+    correct: true
+    feedback: Sverige har krav på tänt ljus hela dygnet, även dagtid.
+  - text: Endast helljus, och bara i mörker.
+    correct: false
+    feedback: Helljus får bara användas när det inte bländar andra trafikanter.
+  - text: Endast positionsljus (parkeringsljus).
+    correct: false
+    feedback: Positionsljus räcker inte; minst varselljus eller halvljus krävs.
+  - text: Ljuset krävs endast från solnedgång till soluppgång.
+    correct: false
+    feedback: I Sverige gäller ljuskravet dygnet runt, även i dagsljus.
+  explanation: I Sverige måste bilar ha minst halvljus eller varselljus tänt under hela
+    dygnet. I mörker, skymning, gryning eller vid nedsatt sikt (regn, dimma, snö) krävs
+    halvljus. Helljus används där det inte bländar mötande eller framförvarande trafik.
+- id: kor-extra-015
+  type: multiple_choice
+  tags:
+  - Scenario
+  - Tätort
+  - Oskyddade
+  question: Du kör i 40 km/h i tätort och ser en boll rulla ut på gatan från en parkerad bil.
+    Vad är viktigast?
+  image: null
+  options:
+  - text: Bromsa direkt och var beredd på att ett barn kan springa efter bollen.
+    correct: true
+    feedback: Barn följer ofta efter bollar utan att titta; förutse det oväntade.
+  - text: Behåll hastigheten och väj åt vänster förbi bollen.
+    correct: false
+    feedback: Att väja ut i mötande körfält kan orsaka en allvarligare olycka.
+  - text: Tuta och öka farten för att snabbt passera området.
+    correct: false
+    feedback: Högre hastighet minskar möjligheten att stanna om ett barn springer ut.
+  - text: Kör över bollen eftersom det bara är ett föremål.
+    correct: false
+    feedback: Problemet är inte bollen utan att det kan finnas ett barn bakom.
+  explanation: En boll som rullar ut i gatan är en klassisk signal om att ett barn kan
+    komma efter. Bromsa i tid, vara beredd att stanna helt, och håll alltid extra låg
+    hastighet där barn kan finnas i närheten. "Förutse det oväntade" är en grundsten i
+    defensiv körning.
+- id: kor-extra-016
+  type: multiple_choice
+  tags:
+  - Scenario
+  - Halka
+  - Bromsning
+  question: Du kör på en rak väg och upptäcker plötsligt en isfläck rakt framför dig. Vad är
+    säkrast?
+  image: null
+  options:
+  - text: Släpp gasen, undvik att bromsa eller styra kraftigt och håll ratten rakt.
+    correct: true
+    feedback: Mjuk körning över isen minskar risken för sladd.
+  - text: Bromsa hårt med ABS precis innan isen.
+    correct: false
+    feedback: Hård inbromsning på eller precis vid is ökar sladdrisken; bromsa före om möjligt.
+  - text: Sväng snabbt undan till vägrenen.
+    correct: false
+    feedback: Plötsliga styrutslag på is orsakar lätt sladd.
+  - text: Koppla ur och växla upp för att spara bränsle.
+    correct: false
+    feedback: Att koppla ur på halt underlag minskar kontrollen över bilen.
+  explanation: Vid plötslig halka ska du undvika tvära rörelser. Släpp gasen, låt motorbromsen
+    verka mjukt och håll ratten stabil tills du är förbi den hala fläcken. Bromsa eller
+    sväng först när fordonet åter har grepp. Sänk alltid hastigheten i tid när isrisk finns.
+- id: kor-extra-017
+  type: multiple_choice
+  tags:
+  - Scenario
+  - Cykel
+  - Omkörning
+  question: Du ska köra om en cyklist på landsväg. Vilket sidoavstånd är lämpligast?
+  image: null
+  options:
+  - text: Minst 1,5 meter i sidoavstånd, gärna mer vid högre hastighet.
+    correct: true
+    feedback: Rekommendationen är minst 1,5 meter för att ge cyklisten säker marginal.
+  - text: Cirka 0,5 meter om du kör sakta.
+    correct: false
+    feedback: Ett så smalt avstånd är farligt och kan skrämma cyklisten ut i kanten.
+  - text: Det räcker att tuta så cyklisten flyttar sig närmare kanten.
+    correct: false
+    feedback: Tutning är för fara; omkörning ska ske med sidoavstånd, inte genom att tränga undan.
+  - text: Avståndet spelar ingen roll om cyklisten har hjälm.
+    correct: false
+    feedback: Sidoavståndet gäller alltid oavsett utrustning.
+  explanation: Vid omkörning av cyklist, gående eller ryttare ska du hålla betryggande
+    sidoavstånd — i praktiken minst 1,5 meter och mer vid högre hastighet. Vänta hellre
+    med omkörningen tills det är säkert att passera brett. Oskyddade trafikanter är sårbara
+    för vinddrag och oförutsedda rörelser.
+- id: kor-extra-018
+  type: multiple_choice
+  tags:
+  - Parkering
+  - Regler
+  question: Vad är skillnaden mellan att "stanna" och att "parkera" enligt trafiklagstiftningen?
+  image: null
+  options:
+  - text: Stanna är kortare uppehåll för av- och påstigning eller av- och pålastning; parkering
+      är längre uppehåll eller uppehåll av andra skäl.
+    correct: true
+    feedback: Definitionen bygger på syfte och varaktighet — passagerare/gods eller inte.
+  - text: Stanna får man göra högst 30 sekunder, parkering högst 2 timmar.
+    correct: false
+    feedback: Det finns ingen sådan tidsgräns; det är syftet med uppehållet som räknas.
+  - text: Det är samma sak — begreppen har samma betydelse i trafiklagen.
+    correct: false
+    feedback: Reglerna skiljer sig åt, bland annat genom olika skyltar.
+  - text: Stanna är tillåtet överallt, parkering endast på parkeringsplatser.
+    correct: false
+    feedback: Stannandeförbud finns också på många platser, exempelvis i korsningar.
+  explanation: Att stanna innebär ett kort uppehåll för av- och påstigning eller av- och
+    pålastning av gods. Att parkera är ett längre uppehåll eller uppehåll av annat skäl,
+    t.ex. att lämna fordonet. "Förbud att stanna" är strängare än "Förbud att parkera" —
+    stanna-skylt förbjuder även korta uppehåll.
+- id: kor-extra-019
+  type: multiple_choice
+  tags:
+  - Miljö
+  - Ecodriving
+  question: Vilket körsätt sparar mest bränsle i en modern personbil?
+  image: null
+  options:
+  - text: Mjuk acceleration, hög växel vid låga varvtal och att utnyttja motorbromsen.
+    correct: true
+    feedback: Sparsam körning bygger på jämnt flöde och låga varvtal.
+  - text: Snabb acceleration upp till högsta tillåtna hastighet och sedan frikoppling utför.
+    correct: false
+    feedback: Frikoppling utför kan stänga av bränsleavstängningen i moderna bilar.
+  - text: Att ofta låta motorn gå på tomgång för att hålla den varm.
+    correct: false
+    feedback: Tomgång är rent bränslespill; moderna motorer värms upp under körning.
+  - text: Att köra i lägre växlar för att ha mer kraft.
+    correct: false
+    feedback: Lägre växel ger högre varvtal och ökad förbrukning.
+  explanation: Eco-driving innebär att hålla jämn fart, accelerera mjukt, välja hög växel
+    med lågt varvtal och använda motorbromsning genom utrullning i hög växel (moderna
+    bilar stänger då av bränsletillförseln). Undvik onödig tomgång och planera körningen
+    för att slippa kraftiga inbromsningar.
+- id: kor-extra-020
+  type: multiple_choice
+  tags:
+  - Scenario
+  - Utryckningsfordon
+  question: Du kör i en stad och bakifrån hör du sirener och ser blåljus från en ambulans. Vad
+    är rätt?
+  image: null
+  options:
+  - text: Lämna fri väg genom att försiktigt köra åt höger och stanna om nödvändigt, men utan
+      att bryta mot trafikregler som riskerar andra.
+    correct: true
+    feedback: Rätt princip — ge fri väg, men utan att själv skapa farliga situationer.
+  - text: Kör ut i mötande körfält direkt för att ge plats.
+    correct: false
+    feedback: Det kan orsaka en frontalkrock; väj åt höger, inte vänster.
+  - text: Kör mot röd signal för att snabbt ge plats.
+    correct: false
+    feedback: Du får inte bryta mot trafikregler som utsätter andra för fara.
+  - text: Fortsätt som vanligt — utryckningsfordon får väja själva.
+    correct: false
+    feedback: Alla trafikanter är skyldiga att underlätta framkomligheten för utryckning.
+  explanation: Vid utryckningsfordon med larm ska du underlätta framkomligheten. Kör
+    försiktigt åt höger, stanna vid behov, men du får inte bryta mot trafikregler på ett
+    sätt som är farligt för andra — exempelvis köra mot rött eller upp på en trottoar
+    där gångtrafikanter befinner sig.
+- id: kor-extra-021
+  type: multiple_choice
+  tags:
+  - Scenario
+  - Övergångsställe
+  - Tätort
+  question: Du närmar dig ett obevakat övergångsställe i tätort och ser en person stå vid kanten
+    och titta mot gatan. Hur agerar du?
+  image: null
+  options:
+  - text: Sänker hastigheten och är beredd att stanna eftersom personen kan vara på väg ut.
+    correct: true
+    feedback: Fordonsförare ska ge gående tillfälle att passera på obevakat övergångsställe.
+  - text: Behåller hastigheten eftersom gående inte har satt foten på övergångsstället än.
+    correct: false
+    feedback: Företräde gäller även den som tydligt avser att gå ut.
+  - text: Tutar så att personen väntar tills du passerat.
+    correct: false
+    feedback: Du ska ge företräde, inte kräva att gående står still.
+  - text: Accelererar förbi för att snabbt lämna platsen fri.
+    correct: false
+    feedback: Ökad fart vid övergångsställen är farligt och lagstridigt.
+  explanation: På ett obevakat övergångsställe har förare väjningsplikt mot gående som går
+    ut på eller tydligt förbereder sig att gå ut på övergångsstället. Sänk hastigheten i
+    god tid så att du kan stanna säkert. Regeln skyddar de mest sårbara trafikanterna.
+- id: kor-extra-022
+  type: multiple_choice
+  tags:
+  - Motorväg
+  - Start
+  - Påfart
+  question: Hur ska du bete dig vid påfart till motorväg?
+  image: null
+  options:
+  - text: Accelerera på accelerationsfältet till en hastighet som motsvarar trafikens och smyg in
+      i luckan när det är säkert.
+    correct: true
+    feedback: Matchande hastighet gör det lätt och säkert att smälta in i trafikrytmen.
+  - text: Stanna i slutet av accelerationsfältet och vänta på en lucka.
+    correct: false
+    feedback: Stopp i accelerationsfältet är farligt och hindrar bakomvarande påfartstrafik.
+  - text: Tuta för att tvinga fordon i högerfältet att bromsa.
+    correct: false
+    feedback: Trafiken på motorvägen har företräde — du ska anpassa dig, inte tvärtom.
+  - text: Håll 50 km/h så att du hinner titta dig om.
+    correct: false
+    feedback: Så låg hastighet gör det nästan omöjligt att flyta in säkert i motorvägstrafiken.
+  explanation: Vid påfart ska du anpassa hastigheten till trafiken på motorvägen och flätas
+    in när det finns en lämplig lucka. Trafiken i höger körfält har företräde, men brukar
+    i god körkultur underlätta infogningen. Undvik att stanna i accelerationsfältet annat
+    än i nödläge.
+- id: kor-extra-023
+  type: multiple_choice
+  tags:
+  - Säkerhet
+  - Trötthet
+  question: Vilka är typiska tecken på körtrötthet?
+  image: null
+  options:
+  - text: Gäspningar, svårighet att hålla blicken i fokus, missade skyltar och försämrad
+      reaktionsförmåga.
+    correct: true
+    feedback: Tidiga tecken på trötthet ska tas på allvar — stanna och vila.
+  - text: Högre puls och starkare koncentration än vanligt.
+    correct: false
+    feedback: Trötthet sänker uppmärksamheten; en känsla av extra skärpa är inte ett faresignal.
+  - text: Att radion låter tydligare.
+    correct: false
+    feedback: Detta är inte ett etablerat tecken på trötthet.
+  - text: Att du känner dig kall om fötterna.
+    correct: false
+    feedback: Kalla fötter är inte ett specifikt trötthetstecken.
+  explanation: Körtrötthet visar sig genom gäspningar, tunga ögonlock, svårighet att hålla
+    koncentrationen, missade skyltar eller att man plötsligt inte minns de senaste kilometrarna.
+    Stanna och vila (power nap, sträck på benen, frisk luft, koffein hjälper kortvarigt).
+    Trötthet är en av de största orsakerna till singelolyckor.
+- id: kor-extra-024
+  type: multiple_choice
+  tags:
+  - Last
+  - Säkerhet
+  question: Du ska frakta en stor låda i baksätet på en personbil. Vad är viktigast?
+  image: null
+  options:
+  - text: Spänna fast lasten så att den inte kan slungas framåt vid en kraftig inbromsning.
+    correct: true
+    feedback: Osäkrad last blir en farlig projektil vid kollision eller tvärbroms.
+  - text: Lägga lasten så högt det går för bättre sikt ut bak.
+    correct: false
+    feedback: Hög last är mer instabil och kan skymma sikten bakåt.
+  - text: Det räcker att stänga dörrarna ordentligt.
+    correct: false
+    feedback: Dörrar hindrar inte lasten från att flyga framåt inuti kupén.
+  - text: Det behövs ingen säkring om lasten väger under 10 kg.
+    correct: false
+    feedback: Även lätta föremål kan orsaka allvarliga skador vid tvärbroms.
+  explanation: Lasten i en bil måste alltid säkras så att den inte kan förskjutas vid
+    hastig inbromsning eller krock. Vid 50 km/h kan en oförankrad 10-kilos låda få en
+    tyngd motsvarande flera hundra kilo. Använd lastsäkringsband, nät eller lastgaller
+    mot kupén.
+- id: kor-extra-025
+  type: multiple_choice
+  tags:
+  - Scenario
+  - Dimma
+  - Belysning
+  question: Du kör in i tät dimma i dagsljus. Vilken belysning är lämpligast?
+  image: null
+  options:
+  - text: Halvljus och dimljus fram (samt dimbakljus om sikten blir mycket dålig).
+    correct: true
+    feedback: Halvljus plus dimljus ger bäst sikt framåt utan att bländas av återspeglingar.
+  - text: Helljus så att du ser längre framåt.
+    correct: false
+    feedback: Helljus reflekteras av dimmans vattendroppar och försämrar sikten kraftigt.
+  - text: Endast positionsljus för att synas utan att blända andra.
+    correct: false
+    feedback: Positionsljus räcker inte för att vara synlig i tät dimma.
+  - text: Ingen belysning alls — det är ju dagsljus.
+    correct: false
+    feedback: I Sverige krävs alltid minst varselljus, och i dimma mer.
+  explanation: I tät dimma bländar helljus dig själv genom att ljuset reflekteras i
+    vattendropparna. Använd halvljus och dimljus fram. Dimbakljus ska bara användas vid
+    kraftigt nedsatt sikt och släckas när bakomvarande trafik kommer nära, eftersom det
+    är mycket starkt och bländar.
+- id: kor-extra-026
+  type: multiple_choice
+  tags:
+  - Oskyddade
+  - Tätort
+  question: Vilka räknas som oskyddade trafikanter?
+  image: null
+  options:
+  - text: Gående, cyklister, mopedister och motorcyklister.
+    correct: true
+    feedback: Dessa saknar yttre karosseri och är mest utsatta vid kollision.
+  - text: Endast gående och personer med rullator.
+    correct: false
+    feedback: Även cyklister, mopedister och motorcyklister räknas som oskyddade.
+  - text: Bilister utan bilbälte.
+    correct: false
+    feedback: Bilister är skyddade av karossen även om bälte saknas — men bälte är lag.
+  - text: Barn under 15 år oavsett färdmedel.
+    correct: false
+    feedback: Kategorin oskyddade handlar om skyddet vid kollision, inte ålder.
+  explanation: Oskyddade trafikanter är sådana som saknar yttre skydd vid en olycka —
+    gående, cyklister, mopedister och motorcyklister. Som bilförare har du ett extra
+    ansvar att visa hänsyn, hålla sidoavstånd vid omkörning och anpassa hastigheten där
+    de förekommer.
+- id: kor-extra-027
+  type: multiple_choice
+  tags:
+  - Övningskörning
+  - Körkort
+  question: Vilka krav ställs på en handledare vid privat övningskörning med personbil?
+  image: null
+  options:
+  - text: Minst 24 år gammal, giltigt körkort för fordonsslaget i minst 5 av de senaste 10 åren
+      och godkänt handledartillstånd.
+    correct: true
+    feedback: Dessa krav gäller för handledare vid privat övningskörning av B-behörighet.
+  - text: Minst 21 år och körkort sedan minst 2 år.
+    correct: false
+    feedback: Åldersgränsen är 24 år och kravet på körkort är 5 av de senaste 10 åren.
+  - text: Endast giltigt körkort — inga andra krav.
+    correct: false
+    feedback: Handledartillstånd krävs, liksom åldersgräns och erfarenhet.
+  - text: Minst 30 år och yrkesförarbevis.
+    correct: false
+    feedback: Yrkesförarbevis krävs inte för privat övningskörning.
+  explanation: För att vara handledare vid privat övningskörning krävs ett handledartillstånd
+    från Transportstyrelsen. Handledaren ska vara minst 24 år, ha haft körkort för fordonsslaget
+    under minst 5 av de senaste 10 åren och ha gått obligatorisk introduktionsutbildning
+    tillsammans med eleven.
+- id: kor-extra-028
+  type: multiple_choice
+  tags:
+  - Scenario
+  - Korsning
+  - Höger
+  question: Du står vid rödljus i en T-korsning. Ljuset slår om till grönt samtidigt som en
+    gående fortfarande går över övergångsstället framför dig. Vad gör du?
+  image: null
+  options:
+  - text: Väntar tills den gående har passerat helt innan du kör vidare.
+    correct: true
+    feedback: Grönt ljus betyder "kör om fri väg finns", inte ovillkorlig rätt att köra.
+  - text: Kör långsamt förbi eftersom du har grönt.
+    correct: false
+    feedback: Grönt ljus ger inte rätt att köra om gående eller annat hinder finns i vägen.
+  - text: Tutar försiktigt för att skynda på den gående.
+    correct: false
+    feedback: Gående har rätt att slutföra sin passage; tuta är bara vid fara.
+  - text: Blinkar med helljuset tills den gående springer.
+    correct: false
+    feedback: Detta är olagligt och trakasserande beteende mot en oskyddad trafikant.
+  explanation: Grönt ljus innebär att du får köra men endast om vägen är fri. En gående som
+    redan är ute på övergångsstället har rätt att avsluta sin passage. Vänta tills vägen
+    är fri och kör vidare med försiktighet.
+- id: kor-extra-029
+  type: multiple_choice
+  tags:
+  - Vägmarkeringar
+  - Körfält
+  question: Vad betyder en heldragen vit linje mellan två körfält i samma riktning?
+  image: null
+  options:
+  - text: Linjen får inte korsas eller överskridas — körfältsbyte är förbjudet.
+    correct: true
+    feedback: Heldragna linjer mellan körfält är förbud mot körfältsbyte där linjen är heldragen.
+  - text: Linjen är endast en rekommendation — det är tillåtet att byta fil vid behov.
+    correct: false
+    feedback: Heldragna markeringar är tvingande, inte rekommendationer.
+  - text: Linjen markerar motsatt körriktning.
+    correct: false
+    feedback: Motsatt riktning markeras med gul linje, inte vit.
+  - text: Den gäller endast nattetid.
+    correct: false
+    feedback: Vägmarkeringar gäller dygnet runt om inte annat anges.
+  explanation: En heldragen vit linje mellan körfält i samma riktning betyder att linjen
+    inte får korsas eller överskridas — körfältsbyte är inte tillåtet där den är heldragen.
+    Streckad linje tillåter byte när det är säkert. Heldragen linje används ofta i korsningar,
+    backkrön och andra platser med dålig sikt.
+- id: kor-extra-030
+  type: multiple_choice
+  tags:
+  - Scenario
+  - Backkrön
+  - Omkörning
+  question: Du närmar dig ett backkrön på landsväg. En långsam bil kör framför. Vad gäller?
+  image: null
+  options:
+  - text: Omkörning är förbjuden om sikten över krönet är skymd och det inte finns extra körfält.
+    correct: true
+    feedback: Skymd sikt över krön är en av de klassiska platserna där omkörning är förbjuden.
+  - text: Omkörning är tillåten så länge du är snabb och använder helljuset.
+    correct: false
+    feedback: Hastighet och ljus ersätter inte kravet på fri sikt under hela omkörningen.
+  - text: Omkörning är alltid tillåten på landsväg om ingen skylt förbjuder det.
+    correct: false
+    feedback: Trafikreglerna förbjuder omkörning där sikten är skymd, även utan skylt.
+  - text: Det räcker att tuta så vet mötande trafik att du kör om.
+    correct: false
+    feedback: Tuta är för fara, inte signal för omkörning.
+  explanation: Omkörning är förbjuden bland annat vid skymd sikt i backar och kurvor, strax
+    före obevakat övergångsställe, i korsningar och där skylt eller heldragen linje förbjuder.
+    Även utan uttrycklig skylt gäller att omkörning bara får ske när det kan göras utan
+    fara — fri sikt över hela omkörningssträckan är avgörande.
