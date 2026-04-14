@@ -705,19 +705,19 @@
   image: null
   options:
   - text: Koppla bort insulinpumpen och ge glukagon im
-    correct: true
+    correct: false
     feedback: Stoppa insulininfusionen för att undvika fortsatt insulinleverans och ge glukagon IM om patienten inte kan ta per os.
   - text: Om patienten kan svälja så tillför något sött med sked
-    correct: true
+    correct: false
     feedback: Om patienten är vaken och kan svälja ges snabbverkande kolhydrat per os för att höja blodsockret.
   - text: Ge glukos/snabb kolhydrat po om möjligt
-    correct: true
+    correct: false
     feedback: Peroral glukos eller juice är förstahandsåtgärd vid medveten hypoglykemi och möjlig sväljförmåga.
   - text: Ge 4E direktverkande insulin med hjälp av pumpen
-    correct: false
+    correct: true
     feedback: Vid misstänkt hypoglykemi ska man inte ge insulin, det förvärrar tillståndet.
   - text: Kontrollera plasma-glukos
-    correct: true
+    correct: false
     feedback: Verifiera blodsockernivån snabbt för att styra behandlingen.
   explanation: Symtomen (kall/klibbig hud, oregerlig) hos en insulinpumpburen patient talar för hypoglykemi. Kontrollera glukos, avbryt insulininfusion, ge peroral snabb kolhydrat om säker sväljförmåga, annars glukagon IM eller IV glukos; ge inte mer insulin.
   id: imp-3810590f
