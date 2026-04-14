@@ -45,10 +45,14 @@ export const useQuizStore = defineStore('quiz', () => {
 
     const count = opts.count || (opts.mode === 'quick5' ? 5 : 10)
 
+    // Collect recently-seen question IDs from the last 2 sessions to avoid repetition
+    const recentSessions = progressStore.history?.sessions?.slice(0, 2) || []
+    const recentIds = new Set(recentSessions.flatMap(s => s.questionIds || []))
+
     if (opts.mode === 'focus') {
       session.value = selectFocus(candidates, progressStore.progress, count)
     } else {
-      session.value = selectSRS(candidates, progressStore.progress, count)
+      session.value = selectSRS(candidates, progressStore.progress, count, recentIds)
     }
 
     // Shuffle options for each question
