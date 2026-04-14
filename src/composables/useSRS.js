@@ -44,9 +44,10 @@ export function recordAnswer(entry, isCorrect) {
  * @param {Array} candidates - question objects
  * @param {Object} progress - progress map { questionId: { bucket, ... } }
  * @param {number} count - how many to select
+ * @param {Set} [recentIds] - question IDs seen in recent sessions to deprioritize
  * @returns {Array} selected questions (shuffled)
  */
-export function selectSRS(candidates, progress, count) {
+export function selectSRS(candidates, progress, count, recentIds = new Set()) {
   if (candidates.length <= count) return shuffle(candidates)
 
   // Group by bucket
@@ -69,9 +70,12 @@ export function selectSRS(candidates, progress, count) {
     const idx = weightedPick(weights)
     const bucket = bNums[idx]
 
-    // Pick random question from chosen bucket that hasn't been selected yet
-    const pool = buckets[bucket].filter(q => !selected.has(q.id))
-    if (pool.length === 0) continue
+    // Within the chosen bucket, prefer questions not seen in recent sessions
+    const allPool = buckets[bucket].filter(q => !selected.has(q.id))
+    if (allPool.length === 0) continue
+
+    const freshPool = allPool.filter(q => !recentIds.has(q.id))
+    const pool = freshPool.length > 0 ? freshPool : allPool
 
     const pick = pool[Math.floor(Math.random() * pool.length)]
     selected.add(pick.id)

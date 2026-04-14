@@ -94,7 +94,7 @@ function goToSaved() {
     </div>
 
     <!-- Daily stats -->
-    <DailyStats class="mb-5" />
+    <DailyStats :questions="subjectQuestions" class="mb-5" />
 
     <!-- Quick actions -->
     <QuickActions

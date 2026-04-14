@@ -21,6 +21,8 @@ const progressStore = useProgressStore()
 const showQuitModal = ref(false)
 const quizContainer = ref(null)
 const selectedIdx = ref(null)
+const previewedIndices = ref(new Set())
+const explanationRef = ref(null)
 
 onMounted(async () => {
   if (!content.questions.length) await content.loadContent()
@@ -37,15 +39,33 @@ const q = computed(() => quiz.currentQuestion)
 const answered = computed(() => quiz.answeredCurrent)
 
 function selectOption(index) {
-  if (answered.value || !q.value) return
+  if (!q.value) return
+  if (answered.value) {
+    // After answering, toggle preview of this option's explanation
+    if (previewedIndices.value.has(index)) {
+      previewedIndices.value.delete(index)
+    } else {
+      previewedIndices.value.add(index)
+    }
+    return
+  }
   selectedIdx.value = index
   const option = q.value.options[index]
   quiz.answerQuestion(q.value.id, index, option.correct)
+  // Scroll down to show explanation
+  nextTick(() => {
+    if (explanationRef.value) {
+      explanationRef.value.scrollIntoView({ behavior: 'smooth', block: 'start' })
+    } else {
+      window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' })
+    }
+  })
 }
 
 function goNext() {
   if (!answered.value) return
   selectedIdx.value = null
+  previewedIndices.value.clear()
   if (quiz.isLastQuestion) {
     quiz.endSession()
     router.replace({ name: 'review' })
@@ -118,11 +138,14 @@ watch(() => quiz.currentIndex, () => {
           :selected="selectedIdx === i"
           :answered="answered"
           :show-result="answered"
+          :previewed="previewedIndices.has(i)"
           @select="selectOption(i)"
         />
       </div>
 
-      <ExplanationPanel v-if="answered" :question="q" :selected-index="selectedIdx" class="mt-4" />
+      <div ref="explanationRef">
+        <ExplanationPanel v-if="answered" :question="q" :selected-index="selectedIdx" class="mt-4" />
+      </div>
 
       <!-- Next / Finish button -->
       <div v-if="answered" class="fixed bottom-0 left-0 right-0 p-4 bg-white/90 dark:bg-stone-950/90 backdrop-blur-sm border-t border-stone-200 dark:border-stone-800">

@@ -28,8 +28,9 @@ const subjectCards = computed(() => {
   return content.subjectList.map(s => {
     const questions = content.questionsForSubject(s)
     const topics = content.topicsForSubject(s)
-    const mastery = progress.categoryMastery(questions)
-    return { id: s, name: getSubjectDisplayName(s), topicCount: topics.length, questionCount: questions.length, mastery }
+    const correctOnce = questions.filter(q => (progress.progress[q.id]?.totalCorrect || 0) > 0).length
+    const uniqueCorrectRatio = questions.length > 0 ? Math.round(correctOnce / questions.length * 100) : 0
+    return { id: s, name: getSubjectDisplayName(s), topicCount: topics.length, questionCount: questions.length, uniqueCorrectRatio }
   })
 })
 
@@ -57,9 +58,9 @@ function selectSubject(subject) {
         </p>
         <div class="mt-3 flex items-center gap-2">
           <div class="h-2 flex-1 rounded-full bg-stone-100 dark:bg-stone-700 overflow-hidden">
-            <div class="h-full rounded-full transition-all" :class="`bg-${s.mastery.color}-500`" :style="{ width: '0%' }"></div>
+            <div class="h-full rounded-full bg-emerald-500 transition-all" :style="{ width: `${s.uniqueCorrectRatio}%` }"></div>
           </div>
-          <span class="text-xs font-medium" :class="`text-${s.mastery.color}-600 dark:text-${s.mastery.color}-400`">{{ s.mastery.name }}</span>
+          <span class="text-xs font-medium text-emerald-600 dark:text-emerald-400">{{ s.uniqueCorrectRatio }}% rätt</span>
         </div>
       </button>
     </div>
