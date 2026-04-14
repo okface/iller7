@@ -26,7 +26,7 @@ const uniqueCorrectRatio = computed(() => {
     </div>
     <div class="p-3 rounded-xl bg-white dark:bg-stone-800 border border-stone-200 dark:border-stone-700 text-center">
       <div class="text-2xl font-bold text-emerald-600 dark:text-emerald-400">{{ accuracy }}%</div>
-      <div class="text-xs text-stone-500 dark:text-stone-400">Idag rätt</div>
+      <div class="text-xs text-stone-500 dark:text-stone-400">Rätt idag</div>
     </div>
     <div class="p-3 rounded-xl bg-white dark:bg-stone-800 border border-stone-200 dark:border-stone-700 text-center">
       <div class="text-2xl font-bold text-stone-600 dark:text-stone-300">{{ uniqueCorrectRatio }}%</div>
